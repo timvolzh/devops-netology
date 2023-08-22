@@ -28,8 +28,17 @@
 
 ## Задание  4
 
-Призапуске provision получаю ошибку
+>vagrant@server1:~$ docker -v
+> 
+>Docker version 24.0.5, build ced0996
+ 
 
-> ansible-playbook: error: unrecognized arguments: --sudo
+---
 
-пока не нашел как победить ее
+Проблему
+>ansible-playbook: error: unrecognized arguments: --sudo 
+
+решил добавлением 
+        setup.compatibility_mode = "2.0" вnode.vm.provision "ansible" do |setup|
+        
+
