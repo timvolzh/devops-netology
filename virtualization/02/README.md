@@ -31,6 +31,10 @@
 >vagrant@server1:~$ docker -v
 > 
 >Docker version 24.0.5, build ced0996
+> 
+> vagrant@server1:~$ docker ps
+> 
+>CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
  
 
 ---
